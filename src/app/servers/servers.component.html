@@ -1,1 +1,17 @@
-<p>servers works!</p>
+<!-- String Interpolation-->
+<p>servers with id {{ serverId }} works</p>
+<!--property binding-->
+<button
+  class="btn btn-primary"
+  [disabled]="allowNewServer"
+  (click)="createServer()"
+>
+  Add server
+</button>
+<p>{{ serverCreationStatus }}</p>
+<!--Reacting to user event-->
+<input type="text" (input)="updateServerName($event)"/>
+<br>
+<br>
+<!--two way data binding-->
+<input type="text" [(ngModel)]="serverName">    
