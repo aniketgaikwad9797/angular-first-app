@@ -8,10 +8,11 @@
 >
   Add server
 </button>
-<p>{{ serverCreationStatus }}</p>
+<p *ngIf="serverCreationFlag">{{ serverCreationStatus }}</p>
 <!--Reacting to user event-->
-<input type="text" (input)="updateServerName($event)"/>
-<br>
-<br>
+<input type="text" (input)="updateServerName($event)" />
+<br />
+<br />
 <!--two way data binding-->
-<input type="text" [(ngModel)]="serverName">    
+<input type="text" [(ngModel)]="serverName" />
+<button type="reset" (click)="resetServer()">Reset</button>
