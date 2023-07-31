@@ -1,1 +1,9 @@
-<p>directives works!</p>
+<p [ngStyle]="{ backgroundColor: 'red' }">
+  server with {{ serverId }} is {{ serverStatus }}
+</p>
+<p [ngStyle]="{ backgroundColor: getColor() }">
+  server with {{ serverId }} is {{ serverStatus }}
+</p>
+<p [ngClass]="{ active: serverStatus === 'online' }">
+  server with {{ serverId }} is {{ serverStatus }}
+</p>
