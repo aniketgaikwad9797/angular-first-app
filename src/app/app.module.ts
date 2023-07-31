@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ServersComponent } from './servers/servers.component';
 import { DatabindingAssignmentComponent } from './databinding-assignment/databinding-assignment.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServersComponent,
-    DatabindingAssignmentComponent
+    DatabindingAssignmentComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
