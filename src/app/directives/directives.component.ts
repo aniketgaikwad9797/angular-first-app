@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class DirectivesComponent {
   serverId: number = 25;
   serverStatus: string = 'online';
+  servers = [2, 3, 4, 5];
 
   getColor() {
     return this.serverStatus == 'offline' ? 'red' : 'green';

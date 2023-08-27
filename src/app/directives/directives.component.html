@@ -4,6 +4,6 @@
 <p [ngStyle]="{ backgroundColor: getColor() }">
   server with {{ serverId }} is {{ serverStatus }}
 </p>
-<p [ngClass]="{ active: serverStatus === 'online' }">
+<p [ngClass]="{ active: serverStatus === 'online' }" *ngFor="let i of servers">
   server with {{ serverId }} is {{ serverStatus }}
 </p>
